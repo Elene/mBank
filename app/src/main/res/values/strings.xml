@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">mBank</string>
+    <string name="hint_username">მომხმარებელი</string>
+    <string name="hint_password">პაროლი</string>
+    <string name="button_enter">შესვლა</string>
+    <string name="label_name">სახელი</string>
+    <string name="label_lastname">გვარი</string>
+    <string name="label_sex">სქესი</string>
+    <string name="label_birthdate">დაბადების თარიღი</string>
+    <string name="label_client_category">კლიენტის კატეგორია</string>
+    <string name="label_phone">ტელეფონი</string>
+    <string name="label_address">მისამართი</string>
+    <string name="label_email">ელ-ფოსტა</string>
+    <string name="tab_name_profile">პროფილი</string>
+    <string name="tab_name_assets">აქტივები</string>
+    <string name="tab_name_transactions">გადახდების ისტორია</string>
+    <string name="tab_name_cards">ბარათები</string>
+    <string name="label_income">შემოსავალი</string>
+    <string name="label_outcome">გასავალი</string>
+
+    <string-array name="tab_names">
+        <item>@string/tab_name_profile</item>
+        <item>@string/tab_name_assets</item>
+        <item>@string/tab_name_transactions</item>
+        <item>@string/tab_name_cards</item>
+    </string-array>
+</resources>
