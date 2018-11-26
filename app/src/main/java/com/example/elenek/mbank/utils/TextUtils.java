@@ -17,7 +17,6 @@ public class TextUtils {
     }
 
     public static String getValidationErrorMessage(String toCheck) {
-        Log.d("Test", App.getContext().getResources().getString(R.string.error_message_length));
         if (TextUtils.isEmpty(toCheck))
             return App.getContext().getResources().getString(R.string.error_message_emtpy);
         if (!TextUtils.hasValidLength(toCheck))

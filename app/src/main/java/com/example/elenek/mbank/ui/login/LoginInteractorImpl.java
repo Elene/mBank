@@ -1,5 +1,7 @@
 package com.example.elenek.mbank.ui.login;
 
+import com.example.elenek.mbank.App;
+import com.example.elenek.mbank.R;
 import com.example.elenek.mbank.network.RetrofitInstance;
 import com.example.elenek.mbank.service.MBankDataService;
 import com.example.elenek.mbank.utils.TextUtils;
@@ -22,12 +24,17 @@ public class LoginInteractorImpl implements LoginContract.LoginInteractor {
 
         if(usernameValidationError != null && passwordValidationError != null &&
                 usernameValidationError.equals(passwordValidationError))
-            errors.add(new LoginError("მომხმარებლის სახელის და პაროლის " + usernameValidationError));
+            errors.add(new LoginError(App.getContext().getResources()
+                    .getString(R.string.field_name_username) + App.getContext().getResources()
+                    .getString(R.string.connection_and) + App.getContext().getResources()
+                    .getString(R.string.field_name_password) + " " + usernameValidationError));
         else {
             if(usernameValidationError != null)
-                errors.add(new LoginError("მომხმარებლის სახელის " + usernameValidationError));
+                errors.add(new LoginError(App.getContext().getResources()
+                        .getString(R.string.field_name_username) + " " + usernameValidationError));
             if(passwordValidationError != null)
-                errors.add(new LoginError("პაროლის " + passwordValidationError));
+                errors.add(new LoginError(App.getContext().getResources()
+                        .getString(R.string.field_name_password) + " " + passwordValidationError));
         }
 
         if(errors.size() > 0) {

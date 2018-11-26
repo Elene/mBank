@@ -58,7 +58,6 @@ public class TransactionsFragment extends Fragment {
         service.getTransactions().enqueue(new Callback<TransactionsInfo>() {
             @Override
             public void onResponse(Call<TransactionsInfo> call, Response<TransactionsInfo> response) {
-                Log.d("Operations", call.request().url().toString());
                 if(response.isSuccessful()) {
                     tvIncome.setText(Double.toString(response.body().getIncomeSum()));
                     tvOutcome.setText(Double.toString(response.body().getOutcomeSum()));
@@ -68,7 +67,6 @@ public class TransactionsFragment extends Fragment {
 
             @Override
             public void onFailure(Call<TransactionsInfo> call, Throwable t) {
-                Log.d("Operations", t.getMessage());
             }
         });
     }
