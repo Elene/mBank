@@ -20,8 +20,8 @@
         <item name="android:textColor">@color/colorWhite</item>
     </style>
 
-    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
-        <item name="android:textColor">@color/colorOrange</item>
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlActivated">@color/colorOrange</item>
     </style>
 
 </resources>

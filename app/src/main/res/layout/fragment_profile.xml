@@ -184,8 +184,8 @@
         app:layout_constraintTop_toBottomOf="@+id/fragment_profile_tv_phone_label" />
 
     <TextView
-        style="@style/ProfileFragmentTextValue"
         android:id="@+id/fragment_profile_tv_address"
+        style="@style/ProfileFragmentTextValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -193,7 +193,9 @@
         android:layout_marginTop="16dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_profile_tv_phone" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_profile_tv_phone"
+
+        tools:text="ეს არის ძალიან დიდი სატესტო ტექსტი ოლაააა გამარჯობა" />
 
     <TextView
         style="@style/ProfileFragmentTextLabel"
