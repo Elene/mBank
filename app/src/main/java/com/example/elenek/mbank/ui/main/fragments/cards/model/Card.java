@@ -1,4 +1,4 @@
-package com.example.elenek.mbank.ui.main.fragments.cards;
+package com.example.elenek.mbank.ui.main.fragments.cards.model;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -26,7 +26,7 @@ public class Card {
     @SerializedName("CardHolder")
     private String cardHolder;
     @SerializedName("ExpDate")
-    private String expDate;
+    private Long expDate;
     @SerializedName("IsCardBlocked")
     private String isCardBlocked;
     @SerializedName("CardPan")
@@ -128,11 +128,11 @@ public class Card {
         this.cardHolder = cardHolder;
     }
 
-    public String getExpDate() {
+    public Long getExpDate() {
         return expDate;
     }
 
-    public void setExpDate(String expDate) {
+    public void setExpDate(Long expDate) {
         this.expDate = expDate;
     }
 

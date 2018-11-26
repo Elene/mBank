@@ -10,12 +10,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.example.elenek.mbank.R;
 import com.example.elenek.mbank.network.RetrofitInstance;
 import com.example.elenek.mbank.service.MBankDataService;
-import com.example.elenek.mbank.ui.main.fragments.transactions.OperationRecyclerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

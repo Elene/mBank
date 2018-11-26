@@ -14,6 +14,7 @@ public class LoginContract {
     interface LoginInteractor {
         interface OnLoginFinishedListener {
             void onSuccess();
+            void onFail(LoginException e);
         }
 
         void login(String username, String password, OnLoginFinishedListener listener);

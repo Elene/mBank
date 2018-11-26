@@ -1,7 +1,7 @@
 package com.example.elenek.mbank.service;
 
 import com.example.elenek.mbank.ui.main.fragments.assets.AssetsAndLiabilities;
-import com.example.elenek.mbank.ui.main.fragments.cards.Card;
+import com.example.elenek.mbank.ui.main.fragments.cards.model.Card;
 import com.example.elenek.mbank.ui.main.fragments.profile.model.ClientInfo;
 import com.example.elenek.mbank.ui.login.SessionInfo;
 import com.example.elenek.mbank.ui.main.fragments.transactions.TransactionsInfo;

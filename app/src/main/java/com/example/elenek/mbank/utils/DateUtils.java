@@ -5,9 +5,15 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateUtils {
-    public static String getDate(long birthDateMilli) {
-        Date currentDate = new Date(birthDateMilli);
+    public static String getDate(long dateMilli) {
+        Date currentDate = new Date(dateMilli);
         DateFormat df = new SimpleDateFormat("dd.MM.yyyy");
+        return df.format(currentDate);
+    }
+
+    public static String getDateWithoutYear(long dateMilli) {
+        Date currentDate = new Date(dateMilli);
+        DateFormat df = new SimpleDateFormat("dd.MM");
         return df.format(currentDate);
     }
 }

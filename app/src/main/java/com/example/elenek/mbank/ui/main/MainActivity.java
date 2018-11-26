@@ -7,6 +7,9 @@ import android.os.Bundle;
 
 import com.example.elenek.mbank.R;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
     private ViewPager vpFragment;
     private TabLayout tlTabs;
@@ -21,11 +24,20 @@ public class MainActivity extends AppCompatActivity {
         vpFragment = findViewById(R.id.activity_main_vp_fragment);
         tlTabs = findViewById(R.id.activity_main_tl_tabs);
 
-        mainViewPagerAdapter = new MainViewPagerAdapter(getSupportFragmentManager(), this);
+        mainViewPagerAdapter = new MainViewPagerAdapter(getSupportFragmentManager());
         vpFragment.setAdapter(mainViewPagerAdapter);
 
-       // vpFragment.setBackgroundResource(R.drawable.ic_day_bg);
+        setFragmentBackground();
 
         tlTabs.setupWithViewPager(vpFragment);
+    }
+
+    private void setFragmentBackground() {
+        SimpleDateFormat sdf = new SimpleDateFormat("HH");
+        String hour = sdf.format(new Date());
+        if(Integer.parseInt(hour) > 18)
+            vpFragment.setBackgroundResource(R.drawable.ic_evening_bg);
+        else
+            vpFragment.setBackgroundResource(R.drawable.ic_day_bg);
     }
 }

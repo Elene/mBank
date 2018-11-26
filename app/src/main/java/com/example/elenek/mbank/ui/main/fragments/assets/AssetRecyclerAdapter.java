@@ -2,14 +2,11 @@ package com.example.elenek.mbank.ui.main.fragments.assets;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.elenek.mbank.R;
-import com.example.elenek.mbank.ui.main.fragments.transactions.OperationViewHolder;
-import com.example.elenek.mbank.ui.main.fragments.transactions.TransactionsInfo;
 
 import java.util.ArrayList;
 import java.util.List;

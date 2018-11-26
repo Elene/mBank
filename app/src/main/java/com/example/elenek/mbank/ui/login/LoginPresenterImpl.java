@@ -26,4 +26,13 @@ public class LoginPresenterImpl implements LoginContract.LoginPresenter, LoginCo
             loginView.navigateToHome();
         }
     }
+
+    @Override
+    public void onFail(LoginException e) {
+        if (loginView != null) {
+            loginView.setError(e.getMessage());
+        }
+    }
+
+
 }

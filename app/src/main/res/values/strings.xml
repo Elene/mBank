@@ -17,6 +17,9 @@
     <string name="tab_name_cards">ბარათები</string>
     <string name="label_income">შემოსავალი</string>
     <string name="label_outcome">გასავალი</string>
+    <string name="connection_and"> და </string>
+    <string name="error_message_emtpy">ველი არ უნდა იყოს ცარიელი</string>
+    <string name="error_message_length">ტექსტის სიგრძე არ უნდა იყოს სამ სიმბოლოზე ნაკლები</string>
 
     <string-array name="tab_names">
         <item>@string/tab_name_profile</item>

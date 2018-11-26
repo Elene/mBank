@@ -7,8 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.elenek.mbank.R;
-import com.example.elenek.mbank.ui.main.fragments.transactions.OperationViewHolder;
-import com.example.elenek.mbank.ui.main.fragments.transactions.TransactionsInfo;
+import com.example.elenek.mbank.ui.main.fragments.cards.model.Card;
 
 import java.util.ArrayList;
 import java.util.List;

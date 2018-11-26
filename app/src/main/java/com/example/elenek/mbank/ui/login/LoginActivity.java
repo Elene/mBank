@@ -1,6 +1,7 @@
 package com.example.elenek.mbank.ui.login;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -41,14 +42,13 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Lo
 
     @Override
     public void navigateToHome() {
-        Log.d("navigateToHome", "d");
         startActivity(new Intent(this, MainActivity.class));
         finish();
     }
 
     @Override
     public void setError(String errorMessage) {
-        Toast.makeText(getApplicationContext(), errorMessage, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), errorMessage, Toast.LENGTH_LONG).show();
     }
 }
 

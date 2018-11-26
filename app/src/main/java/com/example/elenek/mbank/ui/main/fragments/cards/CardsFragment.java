@@ -13,8 +13,7 @@ import android.view.ViewGroup;
 import com.example.elenek.mbank.R;
 import com.example.elenek.mbank.network.RetrofitInstance;
 import com.example.elenek.mbank.service.MBankDataService;
-import com.example.elenek.mbank.ui.main.fragments.assets.AssetRecyclerAdapter;
-import com.example.elenek.mbank.ui.main.fragments.profile.ProfileFragment;
+import com.example.elenek.mbank.ui.main.fragments.cards.model.Card;
 
 import java.util.List;
 

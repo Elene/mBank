@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.elenek.mbank.R;
-import com.example.elenek.mbank.ui.main.fragments.transactions.TransactionsInfo;
 
 public class AssetViewHolder extends RecyclerView.ViewHolder  {
     private TextView tvProductName;

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.example.elenek.mbank.App;
 import com.example.elenek.mbank.R;
 import com.example.elenek.mbank.ui.main.fragments.assets.AssetsFragment;
 import com.example.elenek.mbank.ui.main.fragments.cards.CardsFragment;
@@ -14,12 +15,9 @@ import com.example.elenek.mbank.ui.main.fragments.transactions.TransactionsFragm
 
 public class MainViewPagerAdapter extends FragmentStatePagerAdapter {
 
-    private Context context;
-
-    public MainViewPagerAdapter(FragmentManager fm, Context context) {
+    public MainViewPagerAdapter(FragmentManager fm) {
         super(fm);
 
-        this.context = context;
     }
 
     @Override
@@ -35,12 +33,12 @@ public class MainViewPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return context.getResources().getStringArray(R.array.tab_names).length;
+        return App.getContext().getResources().getStringArray(R.array.tab_names).length;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return context.getResources().getStringArray(R.array.tab_names)[position];
+        return App.getContext().getResources().getStringArray(R.array.tab_names)[position];
     }
 }
